@@ -33,6 +33,7 @@ procedure TForm1.FormCreate(Sender: TObject);
 var
   input, inputr, input_initial: string;
   input_length: integer;
+  input_w: array [0..20] of string;
 begin
   input_length:=0;
   input:='bob growns up at his mom';
@@ -40,6 +41,7 @@ begin
   inputr:='';
   input_length:=length(input);
   showmessage(IntToStr(input_length));
+
   while  input_length > 0 do
   begin
   inputr:=inputr+copy(input, input_length, 1);
