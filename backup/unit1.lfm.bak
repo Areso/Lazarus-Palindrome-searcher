@@ -3,7 +3,7 @@ object Form1: TForm1
   Height = 240
   Top = 151
   Width = 320
-  Caption = 'Polindrom searcher'
+  Caption = 'Palindrome searcher'
   ClientHeight = 240
   ClientWidth = 320
   OnCreate = FormCreate
@@ -15,5 +15,21 @@ object Form1: TForm1
     Width = 313
     Caption = 'Проверить наличие слов-полиндромов '
     TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 4
+    Height = 25
+    Top = 32
+    Width = 292
+    TabOrder = 1
+    Text = 'У мамы рос Боб'
+  end
+  object Label1: TLabel
+    Left = 7
+    Height = 17
+    Top = 8
+    Width = 47
+    Caption = 'Строка'
+    ParentColor = False
   end
 end
