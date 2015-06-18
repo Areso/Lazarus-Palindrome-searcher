@@ -79,6 +79,7 @@ begin
 
   ii:=0;
 
+  //FOR EACH WORD
   while input_w[ii]<>'' do
   begin
        input_length:=0;
@@ -86,8 +87,11 @@ begin
        inputr:='';
        input_initial:=input;
        input_length:=length(input);
+
+       //WHILE A WORD IS NOT EQUAL TO ''
        while  input_length > 0 do
        begin
+          //REVERSING THE WORD
           inputr:=inputr+copy(input, input_length, 1);
           input:=copy(input, 1, input_length-1);
           input_length:=input_length-1;
